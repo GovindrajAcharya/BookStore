@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>hello</title>
+    <style>
+        body {
+            background-image: url("aboutus3.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #Myform {
+            padding-left: 500px;
+            padding-right: 500px;
+            padding-top: 25px;
+            font-size: 18px;
+        }
+
+        .color {
+            color: white;
+            font-weight: 500;
+        }
+
+        #fieldset {
+            background-color: rgba(255, 255, 255, 0.205);
+            border: 0 none;
+            border-radius: 24px;
+        }
+
+        .border{
+            border-radius: 10px;
+            padding: 4px;
+            text-align: center;
+        }
+        
+        h1{
+            padding-bottom: 10px;
+        }
+
+        #submit:hover{
+            cursor: pointer;
+        }
+
+        #reset:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <form style="border: 1px;" id="Myform">
+        <center>
+            <legend>
+                <h1> <b>Contact Details</b> </h1>
+            </legend>
+        </center>
+        <fieldset id="fieldset">
+            <center>
+                <p class="color">Please enter your personal details:</p>
+
+                <label class="color">Name:* </label><input required type="text" class="border"><br><br>
+                <label class="color">Password:*</label> <input required type="password" class="border"><br><br>
+                <label class="color">Mobile:*</label> <input required type="number" class="border"><br><br>
+                <label class="color">Email address:*</label> <input required type="email" class="border"><br><br>
+                <center>
+                    <p class="color">The fields marked * are required</p>
+                </center>
+                <input type="submit" id="submit" style="background-color: black; color: white; border-radius: 8px; border: 0 none;">
+                <input type="reset" id="reset" style="background-color: black; color: white; border-radius: 8px; border: 0 none;" >
+            </center>
+        </fieldset>
+
+    </form>
+</body>
+
+</html>

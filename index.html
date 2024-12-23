@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BookStore</title>
+
+    <style>
+        #imain {
+            margin-bottom: -12px;
+            margin-left: -8px;
+            width: 100vw;
+            height: 90vh;
+        }
+
+        #logo {
+            color: white;
+            font-size: 40px;
+            text-align: left;
+            line-height: 10vh;
+            padding-left: 10px;
+        }
+
+        #navbar {
+            background-color: black;
+            height: 10vh;
+            width: 100vw;
+            margin-left: -8px;
+            margin-top: -8px;
+        }
+
+        .nav {
+            text-align: center;
+        }
+
+        #searchlogo {
+            border-radius: 5px;
+            background-color: black;
+        }
+
+        #searchinput {
+            padding-top: 10px;
+            border-radius: 10px;
+            border: none 0;
+            text-align: center;
+        }
+
+        #search {
+            padding-left: 340px;
+        }
+
+        div {
+            float: right;
+            background-color: white;
+            border: 2px inset;
+            cursor: auto;
+            width: 250px;
+            margin-top: 20px;
+            margin-right: 12px;
+            padding-left: 6px;
+            border-radius: 14px;
+        }
+
+        #from{
+            padding-top: 10px;
+            padding-left: 4px;
+            border: 0;
+            outline: none;
+            width: 210px;
+            margin-bottom: 4px;
+            font-size: 16px;
+        }
+
+        #image{
+            height: 17px;
+            width: 20px;
+            padding-top: 2px;
+        }
+
+        .button{
+            background-color: rgba(255, 255, 255, 0.897);
+            border: 0;
+            border-radius: 10px;
+            font-size: 16px;
+            padding: 2px 8px;
+            margin: 4px;
+            font-weight: 550;
+        }
+
+        button:hover{
+            cursor: pointer;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <a id="logo">BookStore</a>
+
+
+        <a href="home.html" target="main" class="nav" style="padding-left: 300px;"><button class="button">Home</button></a>
+
+        <a href="Books.html" target="main" class="nav"><button class="button">Catalogue</button></a>
+
+        <a href="Login.html" target="main" class="nav"><button class="button">Login</button></a>
+
+        <a href="Registration.html" target="main" class="nav"><button class="button">Register</button></a>
+
+        <a href="cart.html" target="main" class="nav"><button class="button">Cart</button class="button"></a>
+
+        <a href="Payment.html" target="main" class="nav"><button class="button">Payment</button></a>
+
+        <a href="About.html" target="main" class="nav"><button class="button">About us</button></a>
+
+        <button class="button">Dark</button>
+
+        <!-- <a class="nav" id="search">
+            <input type="text" id="searchinput" placeholder="search books">
+            <button type="submit"><img src="searchlogo.png" height="20px" width="20px"></button>
+        </a> -->
+
+        <div><input id="from" type="text" placeholder="search books"/><label id="lead" for="from"> <img src="searchlogo.png" id="image"> </label></div>
+
+    </nav>
+
+    <iframe id="imain" src="home.html" target="main" frameborder="0" name="main"></iframe>
+</body>
+
+</html>

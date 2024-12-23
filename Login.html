@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("log.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: rgb(46, 46, 87);
+        }
+        h1{
+            padding-top: 46px;
+            padding-bottom: 20px;
+            color: rgb(175, 99, 255);
+        }
+        #Myform {
+            padding-left: 600px;
+            padding-right: 600px;
+        }
+
+        #login_form{
+            padding: 30px;
+        }
+
+        #fieldset {
+            background-color: rgba(255, 255, 255, 0.514);
+            border: 0 none;
+            border-radius: 24px;
+        }
+
+        .button{
+            border-radius: 10px;
+            padding: 4px;
+            text-align: center;
+        }
+
+        label{
+            font-size: x-large;
+        }
+
+        .color{
+            color: rgb(175, 99, 255);
+            font-weight: 600;
+        }
+
+        #submit:hover{
+            cursor: pointer;
+        }
+
+        #reset:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="Myform">
+        <center>
+            <legend>
+                <h1> <b>Enter Credentials</b> </h1>
+            </legend>
+        </center>
+
+        <fieldset id="fieldset">
+            <center>
+                <div id="login_form">
+                    <label for="" class="color">Email:</label><br><input id="email_input" class="button" type="email"><br>
+                    <label for="" class="color">Password:</label><input id="password_input" class="button" type="password"><br><br>
+                    <a href="forpass.html">Forget Password</a><br><br>
+                    <input id="submit" onclick="login(e)" class="button" type="submit" style="color: white; background-color: rgb(175, 99, 255);">
+                    <input id="reset" class="button" type="reset" style="color: white; background-color: rgb(175, 99, 255);">
+                </div>
+            </center>
+        </fieldset>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
